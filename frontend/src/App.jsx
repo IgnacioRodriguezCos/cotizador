@@ -115,7 +115,11 @@ function App() {
   };
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: COLORS.GRAY_BACKGROUND }}>
+    <div style={{ 
+      minHeight: '100vh',
+      backgroundColor: COLORS.GRAY_BACKGROUND,
+      zoom: 0.8
+    }}>
       <header style={{
         backgroundColor: COLORS.HUAWEI_RED,
         color: COLORS.WHITE,

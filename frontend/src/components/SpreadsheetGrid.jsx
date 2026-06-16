@@ -315,7 +315,7 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
   };
 
   return (
-    <div style={{ overflow: 'auto', maxHeight: '70vh', border: `2px solid ${COLORS.BLACK}`, borderRadius: '4px' }}>
+    <div style={{ overflow: 'auto', maxHeight: 'calc(100vh - 250px)', border: `2px solid ${COLORS.BLACK}`, borderRadius: '4px' }}>
       <table style={{ borderCollapse: 'collapse', width: '100%', minWidth: '1200px' }}>
         <thead>
           <tr style={{ backgroundColor: COLORS.BLACK, color: COLORS.WHITE }}>
