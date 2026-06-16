@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: cotizador
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    rootDir: backend
+    envVars:
+      - key: NODE_ENV
+        value: production

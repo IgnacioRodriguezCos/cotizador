@@ -1,0 +1,2289 @@
+[
+  {
+    "Region": "Buenos Aires",
+    "Categorias": [
+      {
+        "Categoria": "General Computing",
+        "Flavors": [
+          {
+            "Base Flavor": "s6.small.1",
+            "Windows": 0.035,
+            "SQL Standard": 0.17,
+            "SQL Web": 0.0538,
+            "SQL Enterprise": 0.4138
+          },
+          {
+            "Base Flavor": "s3.medium.2",
+            "Windows": 0.07,
+            "SQL Standard": 0.61,
+            "SQL Web": 0.145,
+            "SQL Enterprise": 1.585
+          },
+          {
+            "Base Flavor": "s6.medium.2",
+            "Windows": 0.07,
+            "SQL Standard": 0.205,
+            "SQL Web": 0.0888,
+            "SQL Enterprise": 0.4488
+          },
+          {
+            "Base Flavor": "s3.medium.4",
+            "Windows": 0.0738,
+            "SQL Standard": 0.6138,
+            "SQL Web": 0.1488,
+            "SQL Enterprise": 1.5888
+          },
+          {
+            "Base Flavor": "s6.medium.4",
+            "Windows": 0.0738,
+            "SQL Standard": 0.2088,
+            "SQL Web": 0.0925,
+            "SQL Enterprise": 0.4525
+          },
+          {
+            "Base Flavor": "s3.large.2",
+            "Windows": 0.14,
+            "SQL Standard": 0.68,
+            "SQL Web": 0.215,
+            "SQL Enterprise": 1.655
+          },
+          {
+            "Base Flavor": "s6.large.2",
+            "Windows": 0.14,
+            "SQL Standard": 0.41,
+            "SQL Web": 0.1775,
+            "SQL Enterprise": 0.8975
+          },
+          {
+            "Base Flavor": "s3.large.4",
+            "Windows": 0.1475,
+            "SQL Standard": 0.6875,
+            "SQL Web": 0.2225,
+            "SQL Enterprise": 1.6625
+          },
+          {
+            "Base Flavor": "s6.large.4",
+            "Windows": 0.1475,
+            "SQL Standard": 0.4175,
+            "SQL Web": 0.185,
+            "SQL Enterprise": 0.905
+          },
+          {
+            "Base Flavor": "s3.xlarge.2",
+            "Windows": 0.28,
+            "SQL Standard": 0.82,
+            "SQL Web": 0.355,
+            "SQL Enterprise": 1.795
+          },
+          {
+            "Base Flavor": "s6.xlarge.2",
+            "Windows": 0.28,
+            "SQL Standard": 0.82,
+            "SQL Web": 0.355,
+            "SQL Enterprise": 1.795
+          },
+          {
+            "Base Flavor": "s3.xlarge.4",
+            "Windows": 0.295,
+            "SQL Standard": 0.835,
+            "SQL Web": 0.37,
+            "SQL Enterprise": 1.81
+          },
+          {
+            "Base Flavor": "s6.xlarge.4",
+            "Windows": 0.295,
+            "SQL Standard": 0.835,
+            "SQL Web": 0.37,
+            "SQL Enterprise": 1.81
+          },
+          {
+            "Base Flavor": "s3.2xlarge.2",
+            "Windows": 0.56,
+            "SQL Standard": 1.37,
+            "SQL Web": 0.6725,
+            "SQL Enterprise": 2.8325
+          },
+          {
+            "Base Flavor": "s6.2xlarge.2",
+            "Windows": 0.56,
+            "SQL Standard": 1.64,
+            "SQL Web": 0.71,
+            "SQL Enterprise": 3.59
+          },
+          {
+            "Base Flavor": "s3.2xlarge.4",
+            "Windows": 0.59,
+            "SQL Standard": 1.67,
+            "SQL Web": 0.74,
+            "SQL Enterprise": 3.62
+          },
+          {
+            "Base Flavor": "s6.2xlarge.4",
+            "Windows": 0.59,
+            "SQL Standard": 1.67,
+            "SQL Web": 0.74,
+            "SQL Enterprise": 3.62
+          },
+          {
+            "Base Flavor": "s3.4xlarge.2",
+            "Windows": 1.12,
+            "SQL Standard": 3.28,
+            "SQL Web": 1.42,
+            "SQL Enterprise": 7.18
+          },
+          {
+            "Base Flavor": "s3.4xlarge.4",
+            "Windows": 1.18,
+            "SQL Standard": 3.34,
+            "SQL Web": 1.48,
+            "SQL Enterprise": 7.24
+          }
+        ]
+      },
+      {
+        "Categoria": "General Computing-Plus",
+        "Flavors": [
+          {
+            "Base Flavor": "c3.large.4",
+            "Windows": 0.2113,
+            "SQL Standard": 0.7513,
+            "SQL Web": 0.2863,
+            "SQL Enterprise": 1.7263
+          },
+          {
+            "Base Flavor": "c6.large.4",
+            "Windows": 0.2113,
+            "SQL Standard": 0.4813,
+            "SQL Web": 0.2488,
+            "SQL Enterprise": 0.9688
+          },
+          {
+            "Base Flavor": "c3.xlarge.4",
+            "Windows": 0.4225,
+            "SQL Standard": 0.9625,
+            "SQL Web": 0.4975,
+            "SQL Enterprise": 1.9375
+          },
+          {
+            "Base Flavor": "c6.xlarge.4",
+            "Windows": 0.4225,
+            "SQL Standard": 0.9625,
+            "SQL Web": 0.4975,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.2xlarge.4",
+            "Windows": 0.845,
+            "SQL Standard": 1.925,
+            "SQL Web": 0.995,
+            "SQL Enterprise": 3.875
+          },
+          {
+            "Base Flavor": "c6.2xlarge.4",
+            "Windows": 0.845,
+            "SQL Standard": 1.925,
+            "SQL Web": 0.995,
+            "SQL Enterprise": 3.875
+          },
+          {
+            "Base Flavor": "c6.3xlarge.4",
+            "Windows": 1.2675,
+            "SQL Standard": 2.8875,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.4xlarge.4",
+            "Windows": 1.69,
+            "SQL Standard": 3.85,
+            "SQL Web": 1.99,
+            "SQL Enterprise": 7.75
+          },
+          {
+            "Base Flavor": "c6.4xlarge.4",
+            "Windows": 1.69,
+            "SQL Standard": 3.85,
+            "SQL Web": null,
+            "SQL Enterprise": 7.75
+          },
+          {
+            "Base Flavor": "c6.6xlarge.4",
+            "Windows": 2.535,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.8xlarge.4",
+            "Windows": 3.38,
+            "SQL Standard": 7.7,
+            "SQL Web": 3.98,
+            "SQL Enterprise": 15.5
+          },
+          {
+            "Base Flavor": "c6.8xlarge.4",
+            "Windows": 3.38,
+            "SQL Standard": 6.62,
+            "SQL Web": null,
+            "SQL Enterprise": 15.5
+          },
+          {
+            "Base Flavor": "c6.12xlarge.4",
+            "Windows": 5.07,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.15xlarge.4",
+            "Windows": 6.3375,
+            "SQL Standard": 14.4375,
+            "SQL Web": 7.4625,
+            "SQL Enterprise": 29.0625
+          },
+          {
+            "Base Flavor": "c6.16xlarge.4",
+            "Windows": 6.76,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          }
+        ]
+      },
+      {
+        "Categoria": "Memory Optimized",
+        "Flavors": [
+          {
+            "Base Flavor": "m3.large.8",
+            "Windows": 0.245,
+            "SQL Standard": 0.785,
+            "SQL Web": 0.32,
+            "SQL Enterprise": 1.76
+          },
+          {
+            "Base Flavor": "m6.large.8",
+            "Windows": 0.245,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m3.xlarge.8",
+            "Windows": 0.49,
+            "SQL Standard": 1.03,
+            "SQL Web": 0.565,
+            "SQL Enterprise": 2.005
+          },
+          {
+            "Base Flavor": "m6.xlarge.8",
+            "Windows": 0.49,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m3.2xlarge.8",
+            "Windows": 0.98,
+            "SQL Standard": 2.06,
+            "SQL Web": 1.13,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m6.2xlarge.8",
+            "Windows": 0.98,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m6.3xlarge.8",
+            "Windows": 1.47,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m3.4xlarge.8",
+            "Windows": 1.96,
+            "SQL Standard": 4.12,
+            "SQL Web": null,
+            "SQL Enterprise": 8.02
+          },
+          {
+            "Base Flavor": "m6.4xlarge.8",
+            "Windows": 1.96,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m6.6xlarge.8",
+            "Windows": 2.94,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m3.8xlarge.8",
+            "Windows": 3.92,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m6.8xlarge.8",
+            "Windows": 3.92,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m6.16xlarge.8",
+            "Windows": 7.84,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          }
+        ]
+      },
+      {
+        "Categoria": "Large Memory",
+        "Flavors": [
+          {
+            "Base Flavor": "e3.7xlarge.12",
+            "Windows": null,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "e3.14xlarge.12",
+            "Windows": null,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "e3.26xlarge.14",
+            "Windows": null,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "e3.52xlarge.14",
+            "Windows": null,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Region": "Santiago",
+    "Categorias": [
+      {
+        "Categoria": "General Computing-Basic",
+        "Flavors": [
+          {
+            "Base Flavor": "t6.small.1",
+            "Windows": 0.02,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "t6.medium.2",
+            "Windows": 0.027,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "t6.large.1",
+            "Windows": 0.04,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "t6.large.2",
+            "Windows": 0.054,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "t6.xlarge.1",
+            "Windows": 0.08,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "t6.xlarge.2",
+            "Windows": 0.108,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "t6.2xlarge.1",
+            "Windows": 0.16,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "t6.2xlarge.2",
+            "Windows": 0.216,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "t6.4xlarge.1",
+            "Windows": 0.32,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "t6.4xlarge.2",
+            "Windows": 0.432,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          }
+        ]
+      },
+      {
+        "Categoria": "General Computing",
+        "Flavors": [
+          {
+            "Base Flavor": "s3.small.1",
+            "Windows": 0.028,
+            "SQL Standard": 0.136,
+            "SQL Web": 0.043,
+            "SQL Enterprise": 0.331
+          },
+          {
+            "Base Flavor": "s6.small.1",
+            "Windows": 0.028,
+            "SQL Standard": 0.136,
+            "SQL Web": 0.043,
+            "SQL Enterprise": 0.331
+          },
+          {
+            "Base Flavor": "s7n.small.1",
+            "Windows": 0.0697,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "s3.medium.2",
+            "Windows": 0.056,
+            "SQL Standard": 0.164,
+            "SQL Web": 0.071,
+            "SQL Enterprise": 0.359
+          },
+          {
+            "Base Flavor": "s6.medium.2",
+            "Windows": 0.056,
+            "SQL Standard": 0.164,
+            "SQL Web": 0.071,
+            "SQL Enterprise": 0.359
+          },
+          {
+            "Base Flavor": "s7n.medium.2",
+            "Windows": 0.0724,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "s3.medium.4",
+            "Windows": 0.059,
+            "SQL Standard": 0.167,
+            "SQL Web": 0.074,
+            "SQL Enterprise": 0.362
+          },
+          {
+            "Base Flavor": "s6.medium.4",
+            "Windows": 0.059,
+            "SQL Standard": 0.167,
+            "SQL Web": 0.074,
+            "SQL Enterprise": 0.362
+          },
+          {
+            "Base Flavor": "s7n.medium.4",
+            "Windows": 0.0779,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "s3.large.2",
+            "Windows": 0.112,
+            "SQL Standard": 0.328,
+            "SQL Web": 0.142,
+            "SQL Enterprise": 0.718
+          },
+          {
+            "Base Flavor": "s6.large.2",
+            "Windows": 0.112,
+            "SQL Standard": 0.328,
+            "SQL Web": 0.142,
+            "SQL Enterprise": 0.718
+          },
+          {
+            "Base Flavor": "s7n.large.2",
+            "Windows": 0.1448,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "s3.large.4",
+            "Windows": 0.118,
+            "SQL Standard": 0.334,
+            "SQL Web": 0.148,
+            "SQL Enterprise": 0.724
+          },
+          {
+            "Base Flavor": "s6.large.4",
+            "Windows": 0.118,
+            "SQL Standard": 0.334,
+            "SQL Web": 0.148,
+            "SQL Enterprise": 0.724
+          },
+          {
+            "Base Flavor": "s7n.large.4",
+            "Windows": 0.1558,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "s3.xlarge.2",
+            "Windows": 0.224,
+            "SQL Standard": 0.656,
+            "SQL Web": 0.284,
+            "SQL Enterprise": 1.436
+          },
+          {
+            "Base Flavor": "s6.xlarge.2",
+            "Windows": 0.224,
+            "SQL Standard": 0.656,
+            "SQL Web": 0.284,
+            "SQL Enterprise": 1.436
+          },
+          {
+            "Base Flavor": "s7n.xlarge.2",
+            "Windows": 0.2896,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "s3.xlarge.4",
+            "Windows": 0.236,
+            "SQL Standard": 0.668,
+            "SQL Web": 0.296,
+            "SQL Enterprise": 1.448
+          },
+          {
+            "Base Flavor": "s6.xlarge.4",
+            "Windows": 0.236,
+            "SQL Standard": 0.668,
+            "SQL Web": 0.296,
+            "SQL Enterprise": 1.448
+          },
+          {
+            "Base Flavor": "s7n.xlarge.4",
+            "Windows": 0.3116,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "s3.2xlarge.2",
+            "Windows": 0.448,
+            "SQL Standard": 1.312,
+            "SQL Web": 0.568,
+            "SQL Enterprise": 2.872
+          },
+          {
+            "Base Flavor": "s6.2xlarge.2",
+            "Windows": 0.448,
+            "SQL Standard": 1.312,
+            "SQL Web": 0.568,
+            "SQL Enterprise": 2.872
+          },
+          {
+            "Base Flavor": "s7n.2xlarge.2",
+            "Windows": 0.5792,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "s3.2xlarge.4",
+            "Windows": 0.472,
+            "SQL Standard": 1.336,
+            "SQL Web": 0.592,
+            "SQL Enterprise": 2.896
+          },
+          {
+            "Base Flavor": "s6.2xlarge.4",
+            "Windows": 0.472,
+            "SQL Standard": 1.336,
+            "SQL Web": 0.592,
+            "SQL Enterprise": 2.896
+          },
+          {
+            "Base Flavor": "s7n.2xlarge.4",
+            "Windows": 0.6232,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "s3.4xlarge.2",
+            "Windows": 0.896,
+            "SQL Standard": 2.624,
+            "SQL Web": 1.136,
+            "SQL Enterprise": 5.744
+          },
+          {
+            "Base Flavor": "s3.4xlarge.4",
+            "Windows": 0.944,
+            "SQL Standard": 2.672,
+            "SQL Web": 1.184,
+            "SQL Enterprise": 5.792
+          }
+        ]
+      },
+      {
+        "Categoria": "General Computing X0",
+        "Flavors": [
+          {
+            "Base Flavor": "x0.1u.1g",
+            "Windows": 0.0565,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.1u.2g",
+            "Windows": 0.058,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.1u.3g",
+            "Windows": 0.0595,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.1u.4g",
+            "Windows": 0.061,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.2u.2g",
+            "Windows": 0.113,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.2u.4g",
+            "Windows": 0.116,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.2u.6g",
+            "Windows": 0.119,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.2u.8g",
+            "Windows": 0.122,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.2u.10g",
+            "Windows": 0.125,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.2u.12g",
+            "Windows": 0.128,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.2u.16g",
+            "Windows": 0.134,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.3u.3g",
+            "Windows": 0.1695,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.3u.6g",
+            "Windows": 0.174,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.3u.9g",
+            "Windows": 0.1785,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.3u.12g",
+            "Windows": 0.183,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.4u.2g",
+            "Windows": 0.223,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.4u.4g",
+            "Windows": 0.226,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.4u.6g",
+            "Windows": 0.229,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.4u.8g",
+            "Windows": 0.232,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.4u.10g",
+            "Windows": 0.235,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.4u.12g",
+            "Windows": 0.238,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.4u.16g",
+            "Windows": 0.244,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.4u.32g",
+            "Windows": 0.268,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.5u.5g",
+            "Windows": 0.2825,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.5u.10g",
+            "Windows": 0.29,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.5u.15g",
+            "Windows": 0.2975,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.5u.20g",
+            "Windows": 0.305,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.6u.2g",
+            "Windows": 0.333,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.6u.6g",
+            "Windows": 0.339,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.6u.8g",
+            "Windows": 0.342,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.6u.10g",
+            "Windows": 0.345,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.6u.12g",
+            "Windows": 0.348,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.6u.16g",
+            "Windows": 0.354,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.6u.18g",
+            "Windows": 0.357,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.6u.20g",
+            "Windows": 0.36,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.6u.24g",
+            "Windows": 0.366,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.6u.48g",
+            "Windows": 0.402,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.7u.7g",
+            "Windows": 0.3955,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.7u.14g",
+            "Windows": 0.406,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.7u.21g",
+            "Windows": 0.4165,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.7u.28g",
+            "Windows": 0.427,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.8u.4g",
+            "Windows": 0.446,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.8u.8g",
+            "Windows": 0.452,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.8u.12g",
+            "Windows": 0.458,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.8u.16g",
+            "Windows": 0.464,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.8u.18g",
+            "Windows": 0.467,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.8u.20g",
+            "Windows": 0.47,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.8u.24g",
+            "Windows": 0.476,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.8u.28g",
+            "Windows": 0.482,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.8u.32g",
+            "Windows": 0.488,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.8u.64g",
+            "Windows": 0.536,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.9u.9g",
+            "Windows": 0.5085,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.9u.18g",
+            "Windows": 0.522,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.9u.27g",
+            "Windows": 0.5355,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.9u.36g",
+            "Windows": 0.549,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.12u.6g",
+            "Windows": 0.669,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.12u.12g",
+            "Windows": 0.678,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.12u.16g",
+            "Windows": 0.684,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.12u.18g",
+            "Windows": 0.687,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.12u.20g",
+            "Windows": 0.69,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.12u.24g",
+            "Windows": 0.696,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.12u.28g",
+            "Windows": 0.702,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.12u.32g",
+            "Windows": 0.708,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.12u.36g",
+            "Windows": 0.714,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.12u.40g",
+            "Windows": 0.72,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.12u.48g",
+            "Windows": 0.732,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.12u.96g",
+            "Windows": 0.804,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.16u.8g",
+            "Windows": 0.892,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.16u.16g",
+            "Windows": 0.904,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.16u.18g",
+            "Windows": 0.907,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.16u.20g",
+            "Windows": 0.91,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.16u.24g",
+            "Windows": 0.916,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.16u.28g",
+            "Windows": 0.922,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.16u.32g",
+            "Windows": 0.928,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.16u.36g",
+            "Windows": 0.934,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.16u.40g",
+            "Windows": 0.94,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.16u.48g",
+            "Windows": 0.952,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.16u.56g",
+            "Windows": 0.964,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.16u.64g",
+            "Windows": 0.976,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "x0.16u.128g",
+            "Windows": 1.072,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          }
+        ]
+      },
+      {
+        "Categoria": "General Computing-Plus",
+        "Flavors": [
+          {
+            "Base Flavor": "ac8.large.2",
+            "Windows": 0.1449,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.large.2",
+            "Windows": 0.159,
+            "SQL Standard": 0.375,
+            "SQL Web": 0.189,
+            "SQL Enterprise": 0.765
+          },
+          {
+            "Base Flavor": "c6.large.2",
+            "Windows": 0.159,
+            "SQL Standard": 0.375,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6s.large.2",
+            "Windows": 0.135,
+            "SQL Standard": 0.351,
+            "SQL Web": null,
+            "SQL Enterprise": 0.741
+          },
+          {
+            "Base Flavor": "c7n.large.2",
+            "Windows": 0.164,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.large.4",
+            "Windows": 0.1524,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.large.4",
+            "Windows": 0.169,
+            "SQL Standard": 0.404,
+            "SQL Web": 0.199,
+            "SQL Enterprise": 0.794
+          },
+          {
+            "Base Flavor": "c6.large.4",
+            "Windows": 0.169,
+            "SQL Standard": 0.385,
+            "SQL Web": 0.199,
+            "SQL Enterprise": 0.775
+          },
+          {
+            "Base Flavor": "c7n.large.4",
+            "Windows": 0.1786,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.xlarge.2",
+            "Windows": 0.2897,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.xlarge.2",
+            "Windows": 0.318,
+            "SQL Standard": 0.75,
+            "SQL Web": 0.378,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6.xlarge.2",
+            "Windows": 0.318,
+            "SQL Standard": 0.75,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6s.xlarge.2",
+            "Windows": 0.27,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c7n.xlarge.2",
+            "Windows": 0.328,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.xlarge.4",
+            "Windows": 0.3048,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.xlarge.4",
+            "Windows": 0.338,
+            "SQL Standard": 0.808,
+            "SQL Web": 0.398,
+            "SQL Enterprise": 1.588
+          },
+          {
+            "Base Flavor": "c6.xlarge.4",
+            "Windows": 0.338,
+            "SQL Standard": 0.77,
+            "SQL Web": 0.398,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c7n.xlarge.4",
+            "Windows": 0.3572,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.2xlarge.2",
+            "Windows": 0.5794,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.2xlarge.2",
+            "Windows": 0.636,
+            "SQL Standard": 1.5,
+            "SQL Web": 0.756,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6.2xlarge.2",
+            "Windows": 0.636,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6s.2xlarge.2",
+            "Windows": 0.54,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c7n.2xlarge.2",
+            "Windows": 0.656,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.2xlarge.4",
+            "Windows": 0.6096,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.2xlarge.4",
+            "Windows": 0.676,
+            "SQL Standard": 1.616,
+            "SQL Web": 0.796,
+            "SQL Enterprise": 3.176
+          },
+          {
+            "Base Flavor": "c6.2xlarge.4",
+            "Windows": 0.676,
+            "SQL Standard": 1.54,
+            "SQL Web": 0.796,
+            "SQL Enterprise": 3.1
+          },
+          {
+            "Base Flavor": "c7n.2xlarge.4",
+            "Windows": 0.7144,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6.3xlarge.2",
+            "Windows": 0.954,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6s.3xlarge.2",
+            "Windows": 0.81,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c7n.3xlarge.2",
+            "Windows": 0.984,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6.3xlarge.4",
+            "Windows": 1.014,
+            "SQL Standard": 2.31,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c7n.3xlarge.4",
+            "Windows": 1.0716,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.4xlarge.2",
+            "Windows": 1.1588,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.4xlarge.2",
+            "Windows": 1.272,
+            "SQL Standard": 3.0,
+            "SQL Web": 1.512,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6.4xlarge.2",
+            "Windows": 1.272,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6s.4xlarge.2",
+            "Windows": 1.08,
+            "SQL Standard": null,
+            "SQL Web": 1.32,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c7n.4xlarge.2",
+            "Windows": 1.312,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.4xlarge.4",
+            "Windows": 1.2192,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.4xlarge.4",
+            "Windows": 1.352,
+            "SQL Standard": 3.232,
+            "SQL Web": 1.592,
+            "SQL Enterprise": 6.352
+          },
+          {
+            "Base Flavor": "c6.4xlarge.4",
+            "Windows": 1.352,
+            "SQL Standard": 3.08,
+            "SQL Web": null,
+            "SQL Enterprise": 6.2
+          },
+          {
+            "Base Flavor": "c7n.4xlarge.4",
+            "Windows": 1.4288,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6.6xlarge.2",
+            "Windows": 1.908,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6s.6xlarge.2",
+            "Windows": 1.62,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c7n.6xlarge.2",
+            "Windows": 1.968,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6.6xlarge.4",
+            "Windows": 2.028,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c7n.6xlarge.4",
+            "Windows": 2.1432,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.8xlarge.2",
+            "Windows": 2.3176,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.8xlarge.2",
+            "Windows": 2.544,
+            "SQL Standard": 6.0,
+            "SQL Web": 3.024,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3ne.8xlarge.2",
+            "Windows": 2.676,
+            "SQL Standard": 5.268,
+            "SQL Web": 3.036,
+            "SQL Enterprise": 12.372
+          },
+          {
+            "Base Flavor": "c6.8xlarge.2",
+            "Windows": 2.544,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6s.8xlarge.2",
+            "Windows": 2.16,
+            "SQL Standard": 4.752,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c7n.8xlarge.2",
+            "Windows": 2.624,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.8xlarge.4",
+            "Windows": 2.4384,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.8xlarge.4",
+            "Windows": 2.704,
+            "SQL Standard": 6.464,
+            "SQL Web": 3.184,
+            "SQL Enterprise": 12.704
+          },
+          {
+            "Base Flavor": "c3ne.8xlarge.4",
+            "Windows": 2.843,
+            "SQL Standard": 5.435,
+            "SQL Web": 3.083,
+            "SQL Enterprise": 12.539
+          },
+          {
+            "Base Flavor": "c6.8xlarge.4",
+            "Windows": 2.704,
+            "SQL Standard": 5.296,
+            "SQL Web": null,
+            "SQL Enterprise": 12.4
+          },
+          {
+            "Base Flavor": "c7n.8xlarge.4",
+            "Windows": 2.8576,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.12xlarge.2",
+            "Windows": 3.4764,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6.12xlarge.2",
+            "Windows": 3.816,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6s.12xlarge.2",
+            "Windows": 3.24,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c7n.12xlarge.2",
+            "Windows": 3.936,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.12xlarge.4",
+            "Windows": 3.6576,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6.12xlarge.4",
+            "Windows": 4.056,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c7n.12xlarge.4",
+            "Windows": 4.2864,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.15xlarge.2",
+            "Windows": 4.77,
+            "SQL Standard": 11.25,
+            "SQL Web": 5.67,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c3.15xlarge.4",
+            "Windows": 5.07,
+            "SQL Standard": 12.12,
+            "SQL Web": 5.97,
+            "SQL Enterprise": 23.82
+          },
+          {
+            "Base Flavor": "ac8.16xlarge.2",
+            "Windows": 4.6352,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6.16xlarge.2",
+            "Windows": 5.088,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6s.16xlarge.2",
+            "Windows": 4.32,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c7n.16xlarge.2",
+            "Windows": 5.248,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.16xlarge.4",
+            "Windows": 4.8768,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c6.16xlarge.4",
+            "Windows": 5.408,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c7n.16xlarge.4",
+            "Windows": 5.7152,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.24xlarge.2",
+            "Windows": 6.9528,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c7n.24xlarge.2",
+            "Windows": 7.872,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.24xlarge.4",
+            "Windows": 7.3152,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "c7n.24xlarge.4",
+            "Windows": 8.5728,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.32xlarge.2",
+            "Windows": 9.2704,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.32xlarge.4",
+            "Windows": 9.7536,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.48xlarge.2",
+            "Windows": 13.9056,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "ac8.48xlarge.4",
+            "Windows": 14.6304,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          }
+        ]
+      },
+      {
+        "Categoria": "Memory Optimized",
+        "Flavors": [
+          {
+            "Base Flavor": "m3.large.8",
+            "Windows": 0.196,
+            "SQL Standard": 0.412,
+            "SQL Web": 0.226,
+            "SQL Enterprise": 0.802
+          },
+          {
+            "Base Flavor": "m6.large.8",
+            "Windows": 0.196,
+            "SQL Standard": 0.412,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m6s.large.8",
+            "Windows": 0.196,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m3.xlarge.8",
+            "Windows": 0.392,
+            "SQL Standard": 0.824,
+            "SQL Web": 0.452,
+            "SQL Enterprise": 1.604
+          },
+          {
+            "Base Flavor": "m6.xlarge.8",
+            "Windows": 0.392,
+            "SQL Standard": 0.824,
+            "SQL Web": null,
+            "SQL Enterprise": 1.604
+          },
+          {
+            "Base Flavor": "m6s.xlarge.8",
+            "Windows": 0.392,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m3.2xlarge.8",
+            "Windows": 0.784,
+            "SQL Standard": 1.648,
+            "SQL Web": 0.904,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m6.2xlarge.8",
+            "Windows": 0.784,
+            "SQL Standard": 1.648,
+            "SQL Web": 0.904,
+            "SQL Enterprise": 3.208
+          },
+          {
+            "Base Flavor": "m6s.2xlarge.8",
+            "Windows": 0.784,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m3.3xlarge.8",
+            "Windows": 1.176,
+            "SQL Standard": 2.472,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m6.3xlarge.8",
+            "Windows": null,
+            "SQL Standard": 2.472,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m6s.3xlarge.8",
+            "Windows": 1.176,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m3.4xlarge.8",
+            "Windows": 1.568,
+            "SQL Standard": 3.296,
+            "SQL Web": null,
+            "SQL Enterprise": 6.416
+          },
+          {
+            "Base Flavor": "m6.4xlarge.8",
+            "Windows": 1.568,
+            "SQL Standard": 3.296,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m6s.4xlarge.8",
+            "Windows": 1.568,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m3.6xlarge.8",
+            "Windows": 2.352,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m6.6xlarge.8",
+            "Windows": 2.352,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m6s.6xlarge.8",
+            "Windows": 2.352,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m3.8xlarge.8",
+            "Windows": 3.136,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m3ne.8xlarge.8",
+            "Windows": 3.296,
+            "SQL Standard": 5.888,
+            "SQL Web": 3.536,
+            "SQL Enterprise": 12.992
+          },
+          {
+            "Base Flavor": "m6.8xlarge.8",
+            "Windows": 3.136,
+            "SQL Standard": 5.728,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m6s.8xlarge.8",
+            "Windows": 3.136,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m3.15xlarge.8",
+            "Windows": 5.88,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m6.16xlarge.8",
+            "Windows": 6.272,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": 25.664
+          },
+          {
+            "Base Flavor": "m6s.16xlarge.8",
+            "Windows": 6.272,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          }
+        ]
+      },
+      {
+        "Categoria": "Large Memory",
+        "Flavors": [
+          {
+            "Base Flavor": "e3.7xlarge.12",
+            "Windows": null,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "e7.12xlarge.20",
+            "Windows": 8.352,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "e3.14xlarge.12",
+            "Windows": null,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "e7.24xlarge.20",
+            "Windows": 16.704,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "e3.26xlarge.14",
+            "Windows": null,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "e7.48xlarge.21",
+            "Windows": 33.408,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "e3.52xlarge.14",
+            "Windows": null,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "e7.96xlarge.21",
+            "Windows": 66.816,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          }
+        ]
+      },
+      {
+        "Categoria": "Ultra-High I-O",
+        "Flavors": [
+          {
+            "Base Flavor": "i3.2xlarge.8",
+            "Windows": 0.893,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "i7n.2xlarge.8",
+            "Windows": 0.9688,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "i3.4xlarge.8",
+            "Windows": 1.786,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "i7n.4xlarge.8",
+            "Windows": 1.9376,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "i3.8xlarge.8",
+            "Windows": 3.572,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "i7n.8xlarge.8",
+            "Windows": 3.8752,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "i3.12xlarge.8",
+            "Windows": 5.358,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "i7n.12xlarge.8",
+            "Windows": 5.8128,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "i7n.16xlarge.8",
+            "Windows": 7.7504,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "i7n.24xlarge.8",
+            "Windows": 11.6256,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          }
+        ]
+      },
+      {
+        "Categoria": "GPU-accelerated",
+        "Flavors": [
+          {
+            "Base Flavor": "g6.xlarge.4",
+            "Windows": 0.71,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "pi2.2xlarge.4",
+            "Windows": 1.12,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "p2s.2xlarge.8",
+            "Windows": 3.257,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "g6.4xlarge.4",
+            "Windows": 1.94,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "pi2.4xlarge.4",
+            "Windows": 2.24,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "p2s.4xlarge.8",
+            "Windows": 6.513,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "g6.6xlarge.4",
+            "Windows": 2.652,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "pi2.8xlarge.4",
+            "Windows": 4.48,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "p2s.8xlarge.8",
+            "Windows": 13.026,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "g6.9xlarge.7",
+            "Windows": 4.044,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "p2s.16xlarge.8",
+            "Windows": 26.053,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "g6.18xlarge.7",
+            "Windows": 8.088,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          }
+        ]
+      },
+      {
+        "Categoria": "Other",
+        "Flavors": [
+          {
+            "Base Flavor": "m7n.large.8",
+            "Windows": 0.2072,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m7n.xlarge.8",
+            "Windows": 0.4144,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m7n.2xlarge.8",
+            "Windows": 0.8288,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m7n.3xlarge.8",
+            "Windows": 1.2432,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m7n.4xlarge.8",
+            "Windows": 1.6576,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m7n.6xlarge.8",
+            "Windows": 2.4864,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m7n.8xlarge.8",
+            "Windows": 3.3152,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m7n.12xlarge.8",
+            "Windows": 4.9728,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m7n.16xlarge.8",
+            "Windows": 6.6304,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          },
+          {
+            "Base Flavor": "m7n.24xlarge.8",
+            "Windows": 9.9456,
+            "SQL Standard": null,
+            "SQL Web": null,
+            "SQL Enterprise": null
+          }
+        ]
+      }
+    ]
+  }
+]
