@@ -137,7 +137,7 @@ function DebugPanel({ fileId }) {
         display: 'flex',
         gap: '5px'
       }}>
-        {['overview', 'region', 'types', 'colors', 'formulas', 'logs', 'validation'].map(tab => (
+        {['overview', 'region', 'billing', 'types', 'colors', 'formulas', 'logs', 'validation'].map(tab => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
@@ -357,6 +357,155 @@ function DebugPanel({ fileId }) {
                   Información de búsqueda no disponible
                 </div>
               )}
+            </Section>
+          </div>
+        )}
+
+        {activeTab === 'billing' && debugData && (
+          <div>
+            <Section title="💳 Tipos de Billing">
+              {!debugData.billing ? (
+                <div style={{ color: '#b2bec3', fontSize: '12px' }}>
+                  Información de billing no disponible
+                </div>
+              ) : (
+                <div>
+                  <div style={{ 
+                    marginBottom: '15px', 
+                    padding: '15px', 
+                    backgroundColor: '#2d2d2d', 
+                    borderRadius: '4px',
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))',
+                    gap: '10px'
+                  }}>
+                    <div style={{ textAlign: 'center' }}>
+                      <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#00b894' }}>
+                        {debugData.billing.summary?.total || 0}
+                      </div>
+                      <div style={{ fontSize: '11px', color: '#b2bec3' }}>Total</div>
+                    </div>
+                    <div style={{ textAlign: 'center' }}>
+                      <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#0984e3' }}>
+                        {debugData.billing.summary?.payPerUse || 0}
+                      </div>
+                      <div style={{ fontSize: '11px', color: '#b2bec3' }}>Pay-per-use</div>
+                    </div>
+                    <div style={{ textAlign: 'center' }}>
+                      <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#fdcb6e' }}>
+                        {debugData.billing.summary?.monthly || 0}
+                      </div>
+                      <div style={{ fontSize: '11px', color: '#b2bec3' }}>Monthly</div>
+                    </div>
+                    <div style={{ textAlign: 'center' }}>
+                      <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#e17055' }}>
+                        {debugData.billing.summary?.yearly || 0}
+                      </div>
+                      <div style={{ fontSize: '11px', color: '#b2bec3' }}>Yearly</div>
+                    </div>
+                    {debugData.billing.summary?.other > 0 && (
+                      <div style={{ textAlign: 'center' }}>
+                        <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#d63031' }}>
+                          {debugData.billing.summary.other}
+                        </div>
+                        <div style={{ fontSize: '11px', color: '#b2bec3' }}>Other</div>
+                      </div>
+                    )}
+                  </div>
+
+                  {debugData.billing.payPerUse?.length > 0 && (
+                    <div style={{ marginBottom: '15px' }}>
+                      <div style={{ 
+                        padding: '8px', 
+                        backgroundColor: '#0984e3', 
+                        borderRadius: '4px', 
+                        marginBottom: '10px',
+                        fontWeight: 'bold'
+                      }}>
+                        💵 Pay-per-use ({debugData.billing.payPerUse.length} filas)
+                      </div>
+                      <div style={{ fontSize: '11px', color: '#b2bec3' }}>
+                        Filas: {debugData.billing.payPerUse.map(b => b.row).join(', ')}
+                      </div>
+                    </div>
+                  )}
+
+                  {debugData.billing.monthly?.length > 0 && (
+                    <div style={{ marginBottom: '15px' }}>
+                      <div style={{ 
+                        padding: '8px', 
+                        backgroundColor: '#fdcb6e', 
+                        borderRadius: '4px', 
+                        marginBottom: '10px',
+                        fontWeight: 'bold',
+                        color: '#000'
+                      }}>
+                        📅 Monthly ({debugData.billing.monthly.length} filas)
+                      </div>
+                      <div style={{ fontSize: '11px', color: '#b2bec3' }}>
+                        Filas: {debugData.billing.monthly.map(b => b.row).join(', ')}
+                      </div>
+                    </div>
+                  )}
+
+                  {debugData.billing.yearly?.length > 0 && (
+                    <div style={{ marginBottom: '15px' }}>
+                      <div style={{ 
+                        padding: '8px', 
+                        backgroundColor: '#e17055', 
+                        borderRadius: '4px', 
+                        marginBottom: '10px',
+                        fontWeight: 'bold'
+                      }}>
+                        📆 Yearly ({debugData.billing.yearly.length} filas)
+                      </div>
+                      <div style={{ fontSize: '11px', color: '#b2bec3' }}>
+                        Filas: {debugData.billing.yearly.map(b => b.row).join(', ')}
+                      </div>
+                    </div>
+                  )}
+
+                  {debugData.billing.other?.length > 0 && (
+                    <div style={{ marginBottom: '15px' }}>
+                      <div style={{ 
+                        padding: '8px', 
+                        backgroundColor: '#d63031', 
+                        borderRadius: '4px', 
+                        marginBottom: '10px',
+                        fontWeight: 'bold'
+                      }}>
+                        ❓ Other ({debugData.billing.other.length} filas)
+                      </div>
+                      <div style={{ fontSize: '11px' }}>
+                        {debugData.billing.other.map((b, i) => (
+                          <div key={i} style={{ marginBottom: '3px' }}>
+                            Fila {b.row}: "{b.value}"
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+            </Section>
+
+            <Section title="ℹ️ Información">
+              <div style={{ fontSize: '12px', lineHeight: '1.6' }}>
+                <p style={{ margin: '0 0 10px 0' }}>
+                  <strong>El tipo de billing se detecta en la columna E:</strong>
+                </p>
+                <ul style={{ margin: 0, paddingLeft: '20px' }}>
+                  <li style={{ marginBottom: '5px' }}>
+                    <strong>Pay-per-use:</strong> El ComboBox de Image está habilitado
+                  </li>
+                  <li style={{ marginBottom: '5px' }}>
+                    <strong>Monthly/Yearly:</strong> El ComboBox de Image está deshabilitado
+                  </li>
+                  <li>
+                    <strong>Other:</strong> Valores no reconocidos
+                  </li>
+                </ul>
+              </div>
             </Section>
           </div>
         )}

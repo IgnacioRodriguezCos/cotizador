@@ -167,6 +167,53 @@ async function generateDebugReport(filePath, fileId, fileMap) {
     
     report.typeCells = typeCellsSearch;
     
+    const billingInfo = {
+      payPerUse: [],
+      monthly: [],
+      yearly: [],
+      other: [],
+      summary: {}
+    };
+    
+    if (fileInfo && fileInfo.structure && fileInfo.structure.serviceRows) {
+      for (const rowNum of fileInfo.structure.serviceRows) {
+        const row = worksheet.getRow(rowNum);
+        const eCell = row.getCell(5);
+        const eValue = eCell.value ? String(eCell.value).toLowerCase().trim() : '';
+        
+        const billingType = {
+          row: rowNum,
+          cell: `E${rowNum}`,
+          value: eCell.value || '',
+          type: null
+        };
+        
+        if (eValue === 'pay-per-use') {
+          billingType.type = 'Pay-per-use';
+          billingInfo.payPerUse.push(billingType);
+        } else if (eValue === 'monthly') {
+          billingType.type = 'Monthly';
+          billingInfo.monthly.push(billingType);
+        } else if (eValue === 'yearly') {
+          billingType.type = 'Yearly';
+          billingInfo.yearly.push(billingType);
+        } else if (eValue) {
+          billingType.type = 'Other';
+          billingInfo.other.push(billingType);
+        }
+      }
+    }
+    
+    billingInfo.summary = {
+      total: billingInfo.payPerUse.length + billingInfo.monthly.length + billingInfo.yearly.length + billingInfo.other.length,
+      payPerUse: billingInfo.payPerUse.length,
+      monthly: billingInfo.monthly.length,
+      yearly: billingInfo.yearly.length,
+      other: billingInfo.other.length
+    };
+    
+    report.billing = billingInfo;
+    
     for (let rowNum = 1; rowNum <= Math.min(worksheet.rowCount, 30); rowNum++) {
       const row = worksheet.getRow(rowNum);
       const firstCell = row.getCell(1);

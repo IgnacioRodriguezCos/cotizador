@@ -206,23 +206,40 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
       return;
     }
 
-    if (col < 'F') {
-      const prevCol = String.fromCharCode(col.charCodeAt(0) - 1);
-      const prevCellData = data.find(r => r.row === row)?.cells[prevCol];
-      const prevCellValue = prevCellData ? String(prevCellData.value).toLowerCase().trim() : '';
-      const isImageCell = prevCellValue === 'image';
-      
-      if (!isImageCell) {
-        return;
-      }
-    }
-
     const prevCol = String.fromCharCode(col.charCodeAt(0) - 1);
     const prevCellData = data.find(r => r.row === row)?.cells[prevCol];
     const prevCellValue = prevCellData ? String(prevCellData.value).toLowerCase().trim() : '';
     const isImageCell = prevCellValue === 'image';
     
+    if (col <= 'F' && !isImageCell) {
+      return;
+    }
+    
     if (isImageCell) {
+      let serviceRow = null;
+      for (let i = 0; i < structure.serviceRows.length; i++) {
+        const currentServiceRow = structure.serviceRows[i];
+        const nextServiceRow = structure.serviceRows[i + 1] || 9999;
+        
+        if (row > currentServiceRow && row < nextServiceRow) {
+          serviceRow = currentServiceRow;
+          break;
+        }
+      }
+      
+      if (serviceRow) {
+        const serviceRowData = data.find(r => r.row === serviceRow);
+        if (serviceRowData) {
+          const eCellData = serviceRowData.cells['E'];
+          const eCellValue = eCellData ? String(eCellData.value).toLowerCase().trim() : '';
+          const isPayPerUse = eCellValue === 'pay-per-use';
+          
+          if (!isPayPerUse) {
+            return;
+          }
+        }
+      }
+      
       const options = await fetchImageOptions(row);
       setImageOptions(options);
     }
@@ -349,25 +366,46 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
                     return null;
                   }
                   
-                   const cellData = rowData.cells[col];
-                   const cellRef = `${col}${rowData.row}`;
-                   const hasFormula = formulas && formulas[cellRef];
-                   const isEditing = editingCell && 
-                                    editingCell.row === rowData.row && 
-                                    editingCell.col === col;
-                   
-                   const displayValue = cellData ? cellData.value : '';
-                   
-                   const prevCol = String.fromCharCode(col.charCodeAt(0) - 1);
-                   const prevCellData = rowData.cells[prevCol];
-                   const prevCellValue = prevCellData ? String(prevCellData.value).toLowerCase().trim() : '';
-                   const isImageCell = prevCellValue === 'image';
-                   
-                   const isEditable = !hasFormula && 
-                                    !structure.headerRows.includes(rowData.row) &&
-                                    (col >= 'F' || isImageCell);
-                   
-                   const isComboBox = isImageCell && isEditable;
+                    const cellData = rowData.cells[col];
+                    const cellRef = `${col}${rowData.row}`;
+                    const hasFormula = formulas && formulas[cellRef];
+                    const isEditing = editingCell && 
+                                     editingCell.row === rowData.row && 
+                                     editingCell.col === col;
+                    
+                    const displayValue = cellData ? cellData.value : '';
+                    
+                    const prevCol = String.fromCharCode(col.charCodeAt(0) - 1);
+                    const prevCellData = rowData.cells[prevCol];
+                    const prevCellValue = prevCellData ? String(prevCellData.value).toLowerCase().trim() : '';
+                    const isImageCell = prevCellValue === 'image';
+                    
+                    let serviceRow = null;
+                    for (let i = 0; i < structure.serviceRows.length; i++) {
+                      const currentServiceRow = structure.serviceRows[i];
+                      const nextServiceRow = structure.serviceRows[i + 1] || 9999;
+                      
+                      if (rowData.row > currentServiceRow && rowData.row < nextServiceRow) {
+                        serviceRow = currentServiceRow;
+                        break;
+                      }
+                    }
+                    
+                    let isPayPerUse = false;
+                    if (serviceRow) {
+                      const serviceRowData = data.find(r => r.row === serviceRow);
+                      if (serviceRowData) {
+                        const eCellData = serviceRowData.cells['E'];
+                        const eCellValue = eCellData ? String(eCellData.value).toLowerCase().trim() : '';
+                        isPayPerUse = eCellValue === 'pay-per-use';
+                      }
+                    }
+                    
+                    const isEditable = !hasFormula && 
+                                     !structure.headerRows.includes(rowData.row) &&
+                                     (col > 'F' || (isImageCell && isPayPerUse));
+                    
+                    const isComboBox = isImageCell && isEditable;
                    
                    if (isEditing && col >= 'A' && col <= 'E' && !isImageCell) {
                      console.warn(`WARNING: Editing cell ${col}${rowData.row} which should not be editable!`);
@@ -419,8 +457,7 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
                                 fontFamily: 'inherit',
                                 backgroundColor: COLORS.WHITE
                               }}
-                            >
-                              <option value="">-</option>
+                             >
                               {(() => {
                                 const cellRef = `${col}${rowData.row}`;
                                 const originalVal = originalValues[cellRef];
