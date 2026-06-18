@@ -294,7 +294,13 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
             await onCellUpdate(typeRow, 'I', originalI);
           }
         } else {
-          const selectedOption = imageOptions.find(opt => opt.value === newValue);
+          let selectedOption = imageOptions.find(opt => opt.value === newValue);
+          
+          if (!selectedOption) {
+            selectedOption = imageOptions.find(opt => 
+              opt.fullNames && opt.fullNames.includes(newValue)
+            );
+          }
           
           if (selectedOption && selectedOption.price) {
             const typeRow = row - 1;
@@ -307,6 +313,8 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
               const calculatedValue = selectedOption.price * fValue;
               
               console.log(`Updating Type row ${typeRow}:`);
+              console.log(`  Selected image: ${newValue}`);
+              console.log(`  Price type: ${selectedOption.label}`);
               console.log(`  Price: ${selectedOption.price}`);
               console.log(`  F value: ${fValue}`);
               console.log(`  Calculated: ${calculatedValue}`);
@@ -457,18 +465,27 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
                                 fontFamily: 'inherit',
                                 backgroundColor: COLORS.WHITE
                               }}
-                             >
+                              >
                               {(() => {
                                 const cellRef = `${col}${rowData.row}`;
                                 const originalVal = originalValues[cellRef];
-                                if (originalVal && !imageOptions.find(opt => opt.value === originalVal)) {
+                                if (originalVal && !imageOptions.find(opt => 
+                                  opt.value === originalVal || 
+                                  (opt.fullNames && opt.fullNames.includes(originalVal))
+                                )) {
                                   return <option value={originalVal}>{originalVal} (original)</option>;
                                 }
                                 return null;
                               })()}
-                              {imageOptions.map(opt => (
-                                <option key={opt.value} value={opt.value}>{opt.label}</option>
-                              ))}
+                              {imageOptions.map(opt => 
+                                opt.fullNames && opt.fullNames.length > 0 ? (
+                                  opt.fullNames.map((fullName, i) => (
+                                    <option key={`${opt.value}-${i}`} value={fullName}>{fullName}</option>
+                                  ))
+                                ) : (
+                                  <option key={opt.value} value={opt.value}>{opt.label}</option>
+                                )
+                              )}
                             </select>
                           )
                         ) : (

@@ -9,6 +9,7 @@ const { recalculateAffectedFormulas } = require('../services/formulaRecalculator
 const debugLogger = require('../services/debugLogger');
 const { generateDebugReport, validateFormulaCalculation } = require('../services/debugService');
 const pricingService = require('../services/pricingService');
+const imagesService = require('../services/imagesService');
 
 const fileMap = new Map();
 
@@ -372,9 +373,34 @@ router.post('/image-options', async (req, res) => {
     console.log('Region:', region);
     console.log('Type value:', typeValue);
     
-    const result = pricingService.getImageOptions(region, typeValue);
+    const pricingResult = pricingService.getImageOptions(region, typeValue);
     
-    console.log('Result:', JSON.stringify(result, null, 2));
+    console.log('Pricing result:', JSON.stringify(pricingResult, null, 2));
+    
+    if (pricingResult.error || !pricingResult.options || pricingResult.options.length === 0) {
+      res.json(pricingResult);
+      return;
+    }
+    
+    const optionsWithFullNames = pricingResult.options.map(opt => {
+      const fullNames = imagesService.getImagesByType(opt.value);
+      
+      return {
+        label: opt.label,
+        value: opt.value,
+        price: opt.price,
+        fullNames: fullNames
+      };
+    });
+    
+    const result = {
+      region: pricingResult.region,
+      category: pricingResult.category,
+      flavor: pricingResult.flavor,
+      options: optionsWithFullNames
+    };
+    
+    console.log('Result with full names:', JSON.stringify(result, null, 2));
     
     debugLogger.addLog('IMAGE_OPTIONS', 'Opciones de imagen obtenidas', {
       region,

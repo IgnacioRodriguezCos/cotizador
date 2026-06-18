@@ -1,0 +1,18 @@
+Windows Server 2019 Datacenter 64bit
+Windows Server 2019 Standard 64bit
+Windows Server 2016 Datacenter 64bit
+Windows Server 2016 Standard 64bit
+Windows Server 2012 R2 Datacenter 64bit
+Windows Server 2012 R2 Standard 64bit
+
+Windows Server 2016 Datacenter SQL Server 2017 Enterprise Edition 64bit
+Windows Server 2016 Datacenter SQL Server 2017 Standard Edition 64bit
+
+Windows Server 2012 R2 Datacenter SQL Server 2016 Enterprise Edition 64bit
+Windows Server 2012 R2 Datacenter SQL Server 2016 Standard Edition 64bit
+Windows Server 2012 R2 Datacenter SQL Server 2014 Enterprise Edition 64bit
+Windows Server 2012 R2 Datacenter SQL Server 2014 Standard Edition 64bit
+Windows Server 2012 R2 Datacenter SQL Server 2014 WEB Edition 64bit
+Windows Server 2012 R2 Datacenter SQL Server 2012 Enterprise Edition 64bit
+Windows Server 2012 R2 Datacenter SQL Server 2012 Standard Edition 64bit
+Windows Server 2012 R2 Datacenter SQL Server 2012 WEB Edition 64bit
