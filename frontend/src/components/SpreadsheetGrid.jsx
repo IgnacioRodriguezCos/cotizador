@@ -211,7 +211,15 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
     const prevCellValue = prevCellData ? String(prevCellData.value).toLowerCase().trim() : '';
     const isImageCell = prevCellValue === 'image';
     
-    if (col <= 'F' && !isImageCell) {
+    const isServiceRow = structure.serviceRows.includes(row);
+    
+    if (col === 'A' && isServiceRow) {
+      setEditingCell({ row, col });
+      setEditValue(cellData ? String(cellData.value || '') : '');
+      return;
+    }
+    
+    if (!isImageCell) {
       return;
     }
     
@@ -389,6 +397,8 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
                     const isImageCell = prevCellValue === 'image';
                     
                     let serviceRow = null;
+                    const isServiceRow = structure.serviceRows.includes(rowData.row);
+                    
                     for (let i = 0; i < structure.serviceRows.length; i++) {
                       const currentServiceRow = structure.serviceRows[i];
                       const nextServiceRow = structure.serviceRows[i + 1] || 9999;
@@ -411,7 +421,7 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
                     
                     const isEditable = !hasFormula && 
                                      !structure.headerRows.includes(rowData.row) &&
-                                     (col > 'F' || (isImageCell && isPayPerUse));
+                                     ((col === 'A' && isServiceRow) || (isImageCell && isPayPerUse));
                     
                     const isComboBox = isImageCell && isEditable;
                    
