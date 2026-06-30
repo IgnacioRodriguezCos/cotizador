@@ -91,7 +91,7 @@ async function generateDebugReport(filePath, fileId, fileMap) {
         const cell = row.getCell(colNum);
         const cellValue = cell.value ? String(cell.value).toLowerCase().trim() : '';
         
-        if (cellValue === 'type') {
+        if (cellValue === 'type' || cellValue === 'tipo') {
           const nextCol = colNum + 1;
           const typeCell = row.getCell(nextCol);
           const typeValue = typeCell.value ? String(typeCell.value).trim() : null;
@@ -188,13 +188,13 @@ async function generateDebugReport(filePath, fileId, fileMap) {
           type: null
         };
         
-        if (eValue === 'pay-per-use') {
+        if (eValue === 'pay-per-use' || eValue === 'pago por uso' || eValue === 'pago-por-uso') {
           billingType.type = 'Pay-per-use';
           billingInfo.payPerUse.push(billingType);
-        } else if (eValue === 'monthly') {
+        } else if (eValue === 'monthly' || eValue === 'mensual') {
           billingType.type = 'Monthly';
           billingInfo.monthly.push(billingType);
-        } else if (eValue === 'yearly') {
+        } else if (eValue === 'yearly' || eValue === 'anual') {
           billingType.type = 'Yearly';
           billingInfo.yearly.push(billingType);
         } else if (eValue) {

@@ -45,22 +45,43 @@ function normalizeCategory(category) {
   
   const catLower = category.toLowerCase().trim();
   
-  if (catLower.includes('general computing-plus') || catLower.includes('general computing-plus')) {
+  if (catLower.includes('general computing-plus') || 
+      catLower.includes('general computing plus') ||
+      catLower.includes('computo general-plus') ||
+      catLower.includes('cómputo general-plus') ||
+      catLower.includes('computo-plus') ||
+      catLower.includes('cómputo-plus')) {
     return 'General Computing-Plus';
   }
-  if (catLower.includes('general computing-basic')) {
+  
+  if (catLower.includes('general computing-basic') ||
+      catLower.includes('computo general-basic') ||
+      catLower.includes('cómputo general-basic')) {
     return 'General Computing-Basic';
   }
-  if (catLower.includes('general computing') && !catLower.includes('plus') && !catLower.includes('basic')) {
+  
+  if ((catLower.includes('general computing') || 
+       catLower.includes('computo general') ||
+       catLower.includes('cómputo general')) && 
+      !catLower.includes('plus') && 
+      !catLower.includes('basic')) {
     return 'General Computing';
   }
-  if (catLower.includes('memory optimized')) {
+  
+  if (catLower.includes('memory optimized') ||
+      catLower.includes('memoria optimizada')) {
     return 'Memory Optimized';
   }
-  if (catLower.includes('large memory')) {
+  
+  if (catLower.includes('large memory') ||
+      catLower.includes('memoria grande') ||
+      catLower.includes('gran memoria')) {
     return 'Large Memory';
   }
-  if (catLower.includes('general computing x0')) {
+  
+  if (catLower.includes('general computing x0') ||
+      catLower.includes('computo general x0') ||
+      catLower.includes('cómputo general x0')) {
     return 'General Computing X0';
   }
   

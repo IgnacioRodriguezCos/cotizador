@@ -23,7 +23,7 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
         const prevCellData = rowData.cells[prevCol];
         const prevCellValue = prevCellData ? String(prevCellData.value).toLowerCase().trim() : '';
         
-        if (prevCellValue === 'image') {
+        if (prevCellValue === 'image' || prevCellValue === 'imagen') {
           const cellRef = `${col}${rowData.row}`;
           originals[cellRef] = rowData.cells[col].value;
           
@@ -64,7 +64,7 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
   const getTypeValue = (row) => {
     const typeRow = row - 1;
     
-    console.log(`Looking for Type in row ${typeRow} (above Image row ${row})`);
+    console.log(`Looking for Type/Tipo in row ${typeRow} (above Image row ${row})`);
     
     const rowData = data.find(r => r.row === typeRow);
     if (!rowData) {
@@ -76,11 +76,11 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
       const cellData = rowData.cells[col];
       const cellValue = cellData ? String(cellData.value).toLowerCase().trim() : '';
       
-      if (cellValue === 'type') {
+      if (cellValue === 'type' || cellValue === 'tipo') {
         const nextCol = String.fromCharCode(col.charCodeAt(0) + 1);
         const typeCellData = rowData.cells[nextCol];
         
-        console.log(`Found "Type" at ${col}${typeRow}, value at ${nextCol}${typeRow}:`, typeCellData?.value);
+        console.log(`Found "Type/Tipo" at ${col}${typeRow}, value at ${nextCol}${typeRow}:`, typeCellData?.value);
         
         if (typeCellData && typeCellData.value) {
           return typeCellData.value;
@@ -88,7 +88,7 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
       }
     }
     
-    console.log('No "Type" cell found in row', typeRow);
+    console.log('No "Type/Tipo" cell found in row', typeRow);
     return null;
   };
 
@@ -209,7 +209,7 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
     const prevCol = String.fromCharCode(col.charCodeAt(0) - 1);
     const prevCellData = data.find(r => r.row === row)?.cells[prevCol];
     const prevCellValue = prevCellData ? String(prevCellData.value).toLowerCase().trim() : '';
-    const isImageCell = prevCellValue === 'image';
+    const isImageCell = prevCellValue === 'image' || prevCellValue === 'imagen';
     
     const isServiceRow = structure.serviceRows.includes(row);
     
@@ -240,7 +240,9 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
         if (serviceRowData) {
           const eCellData = serviceRowData.cells['E'];
           const eCellValue = eCellData ? String(eCellData.value).toLowerCase().trim() : '';
-          const isPayPerUse = eCellValue === 'pay-per-use';
+          const isPayPerUse = eCellValue === 'pay-per-use' || 
+                             eCellValue === 'pago por uso' ||
+                             eCellValue === 'pago-por-uso';
           
           if (!isPayPerUse) {
             return;
@@ -394,7 +396,7 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
                     const prevCol = String.fromCharCode(col.charCodeAt(0) - 1);
                     const prevCellData = rowData.cells[prevCol];
                     const prevCellValue = prevCellData ? String(prevCellData.value).toLowerCase().trim() : '';
-                    const isImageCell = prevCellValue === 'image';
+                    const isImageCell = prevCellValue === 'image' || prevCellValue === 'imagen';
                     
                     let serviceRow = null;
                     const isServiceRow = structure.serviceRows.includes(rowData.row);
@@ -415,7 +417,9 @@ function SpreadsheetGrid({ data, formulas, structure, rowColors, merges, region,
                       if (serviceRowData) {
                         const eCellData = serviceRowData.cells['E'];
                         const eCellValue = eCellData ? String(eCellData.value).toLowerCase().trim() : '';
-                        isPayPerUse = eCellValue === 'pay-per-use';
+                        isPayPerUse = eCellValue === 'pay-per-use' || 
+                                     eCellValue === 'pago por uso' ||
+                                     eCellValue === 'pago-por-uso';
                       }
                     }
                     
