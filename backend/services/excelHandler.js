@@ -222,6 +222,64 @@ async function getExcelBuffer(filePath) {
   const workbook = new ExcelJS.Workbook();
   await workbook.xlsx.readFile(filePath);
   
+  if (workbook.worksheets.length > 1) {
+    console.log(`Workbook has ${workbook.worksheets.length} worksheets, exporting only the first one`);
+    
+    const firstSheet = workbook.worksheets[0];
+    
+    const newWorkbook = new ExcelJS.Workbook();
+    const newSheet = newWorkbook.addWorksheet(firstSheet.name);
+    
+    for (let rowNum = 1; rowNum <= firstSheet.rowCount; rowNum++) {
+      const sourceRow = firstSheet.getRow(rowNum);
+      const destRow = newSheet.getRow(rowNum);
+      
+      destRow.height = sourceRow.height;
+      destRow.hidden = sourceRow.hidden;
+      destRow.outlineLevel = sourceRow.outlineLevel;
+      destRow.collapsed = sourceRow.collapsed;
+      
+      for (let colNum = 1; colNum <= firstSheet.columnCount; colNum++) {
+        const sourceCell = sourceRow.getCell(colNum);
+        const destCell = destRow.getCell(colNum);
+        
+        destCell.value = sourceCell.value;
+        destCell.style = sourceCell.style;
+        destCell.numFmt = sourceCell.numFmt;
+        destCell.font = sourceCell.font;
+        destCell.border = sourceCell.border;
+        destCell.fill = sourceCell.fill;
+        destCell.alignment = sourceCell.alignment;
+      }
+      
+      destRow.commit();
+    }
+    
+    for (let colNum = 1; colNum <= firstSheet.columnCount; colNum++) {
+      const sourceCol = firstSheet.getColumn(colNum);
+      const destCol = newSheet.getColumn(colNum);
+      
+      destCol.width = sourceCol.width;
+      destCol.hidden = sourceCol.hidden;
+      destCol.outlineLevel = sourceCol.outlineLevel;
+      destCol.collapsed = sourceCol.collapsed;
+    }
+    
+    try {
+      const merges = firstSheet.model.merges || [];
+      console.log(`Found ${merges.length} merged cells`);
+      
+      for (const merge of merges) {
+        newSheet.mergeCells(merge);
+      }
+    } catch (err) {
+      console.log('No merges found or error copying merges:', err.message);
+    }
+    
+    const buffer = await newWorkbook.xlsx.writeBuffer();
+    return buffer;
+  }
+  
   const buffer = await workbook.xlsx.writeBuffer();
   return buffer;
 }
